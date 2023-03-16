@@ -8,7 +8,8 @@
     @livewireStyles
 </head>
 <body>
-    <h1>home</h1>
+    <livewire:counter /> 
+    {{-- @extends('livewire.counter') --}}
     @livewireScripts
 </body>
 </html>
