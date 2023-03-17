@@ -16,6 +16,11 @@ class Country extends Component
     public $selectedState = NULL;
     public $selectedRue = NULL;
 
+    public function init()
+    {
+        $this->selectedRue = NULL;
+    }
+
     /**
      * Write code on Method
      *

@@ -2,7 +2,7 @@
     <div class="form-group row">
         <label for="state" class="col-md-4 col-form-label text-md-right">Countries</label>
         <div class="col-md-6">
-            <select wire:model="selectedState" class="form-control">
+            <select wire:model="selectedState" wire:click="init"  class="form-control">
                 <option value="" selected>Choose country</option>
                 @foreach ($Countries as $state)
                     <option value="{{ $state->id }}">{{ $state->name }}</option>
@@ -20,6 +20,8 @@
                     <option value="" selected>Choose city</option>
                     @foreach ($cities as $city)
                         <option value="{{ $city->id }}">{{ $city->name }}</option>
+                        {{-- {{ $selectedState == null }} --}}
+                        {{ $selectedRue == null }}
                     @endforeach
                 </select>
             </div>
