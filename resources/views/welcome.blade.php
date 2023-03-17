@@ -8,7 +8,7 @@
     @livewireStyles
 </head>
 <body>
-    <livewire:counter /> 
+    <livewire:country /> 
     {{-- @extends('livewire.counter') --}}
     @livewireScripts
 </body>
